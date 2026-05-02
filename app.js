@@ -10,7 +10,7 @@ menuBtn.addEventListener("click", () => {
 });
 
 
-// 🟢 render function
+// render function
 function renderTasks() {
   taskList.innerHTML = "";
 
@@ -31,7 +31,7 @@ function renderTasks() {
     const text = document.createElement("p");
     text.innerText = task.text;
 
-    // ✅ strike-through if completed
+    // strike-through if completed
     if (task.completed) {
       text.style.textDecoration = "line-through";
     }
@@ -40,14 +40,14 @@ function renderTasks() {
     deleteBtn.classList.add("delete-task");
     deleteBtn.innerText = "-";
 
-    // ✅ toggle complete
+    // toggle complete
     tickBtn.addEventListener("click", () => {
       tasks[index].completed = !tasks[index].completed;
       localStorage.setItem("tasks", JSON.stringify(tasks));
       renderTasks();
     });
 
-    // ✅ delete task
+    // delete task
     deleteBtn.addEventListener("click", () => {
       tasks.splice(index, 1);
       localStorage.setItem("tasks", JSON.stringify(tasks));
@@ -62,7 +62,7 @@ function renderTasks() {
 }
 
 
-// 🟢 add task function
+// add task function
 function addTask(text) {
   tasks.push({
     text: text,
@@ -74,7 +74,7 @@ function addTask(text) {
 }
 
 
-// 🟢 add button click
+// add button click
 taskButton.addEventListener("click", () => {
   let task = prompt("Enter new task:");
   if (!task) return; // prevents empty/null
@@ -82,5 +82,5 @@ taskButton.addEventListener("click", () => {
 });
 
 
-// 🟢 initial render
+// initial render
 renderTasks();
