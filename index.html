@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do App</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="app-name">ToDo!</div>
+    </div>
+
+    <div class="main-body">
+      <div class="hamburger-section">
+        <button id="hamburger" style="display: inline">☰</button>
+        <p id="weeks" style="display: inline">Weeks</p>
+        <div class="weekdays">
+          <p id="this-week">This week</p>
+          <ul>
+            <li><a href="">Monday</a></li>
+            <li><a href="">Tuesday</a></li>
+            <li><a href="">Wednesday</a></li>
+            <li><a href="">Thrusday</a></li>
+            <li><a href="">Friday</a></li>
+            <li><a href="">Saturday</a></li>
+            <li><a href="">Sunday</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tasks-section">
+        <p id="tasks-heading">Tasks</p>
+        <div class="task-list"></div>
+        <div class="add-item">
+          <p>Add Task</p>
+          <button id="add-task">+</button>
+        </div>
+      </div>
+
+      <div class="quote-section">
+        <p>NO MOOD?</p>
+        <br />
+        <p>Read This!</p>
+        <p class="quote">
+          “ Perfection is non attainable,<br />
+          but if we chase perfection we<br />
+          &nbsp;&nbsp;&nbsp;can catch excellence.”
+        </p>
+      </div>
+    </div>
+
+    <script src="../JS/app.js"></script>
+  </body>
+</html>

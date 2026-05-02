@@ -1,0 +1,167 @@
+* {
+  margin: 5px;
+}
+
+.navbar {
+  height: 60px;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-items: center;
+  /* box-shadow: 0 1px 5px rgb(0 0 0 / 57%); */
+}
+
+.app-name {
+  font-size: 2rem;
+  margin-left: 12px;
+  font-family: Consolas, "Courier New", monospace;
+  font-weight: 200;
+}
+
+#hamburger {
+  font-size: 1.5rem;
+  font-weight: 200;
+  font-family: Consolas, "Courier New", monospace;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+#weeks {
+  font-size: 1.5rem;
+  font-weight: 100;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-body {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.weekdays {
+  margin-top: 40px;
+  transform: translateX(0%);
+  transition: transform 0.3s ease;
+}
+
+.weekdays.active {
+  transform: translateX(-200%);
+}
+
+ul {
+  margin-top: 20px;
+  margin-left: -18px;
+}
+
+#this-week {
+  font-size: 1.1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 100;
+}
+
+li {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 10px;
+  font-family: Consolas, "Courier New", monospace;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.tasks-section {
+  margin-top: 10px;
+  margin-left: 160px;
+}
+
+#tasks-heading {
+  font-size: 1.5rem;
+  font-weight: 100;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 30px;
+}
+
+.tick-box p {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: Consolas, "Courier New", monospace;
+  margin-bottom: 20px;
+}
+
+.tick-box {
+  height: 1.2rem;
+  width: 1.2rem;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8rem;
+  line-height: 1;
+  padding: 0;
+  background-color: white;
+}
+
+.tick-box.checked::after {
+  content: "✔";
+  color: green;
+}
+
+.task-list .tick-box {
+  display: inline;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+}
+
+.delete-task {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  height: 1.1rem;
+  width: 1.1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1.5px solid black;
+  margin-left: 20px;
+}
+
+.add-item {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.add-item button {
+  background-color: white;
+  cursor: pointer;
+}
+
+.quote-section {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 140px;
+}
+
+.quote-section > p {
+  font-size: 1.1rem;
+  font-weight: 100;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 30px;
+}
+
+.quote {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 40px;
+}
